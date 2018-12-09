@@ -1,0 +1,169 @@
+.header {
+	position: relative;
+	min-height: 100vh;
+	background: #0d0739 url(../images/header-bg.jpg);
+	background-size: cover;
+}
+
+.header--top {
+	position: relative;
+	padding-top: 23px;
+}
+
+.header::before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 432px;
+	height: 534px;
+	background: url(../images/header-me.png);
+	background-size: contain;
+	transform: translateX(-34%);
+}
+
+.logo,
+.menu {
+	display: inline-block;
+}
+
+.logo {
+	margin-left: 201px;
+}
+
+.menu {
+	position: absolute;
+	top: 23px;
+	right: 0;
+	transform: translateX(-495%);
+	cursor: pointer;
+}
+
+.menu__btn--burger {
+	min-width: 42px;
+	min-height: 38px;
+	font-size: 38px;
+	color: #ffffff;
+}
+
+.menu__btn--burger:hover {
+	color: #bbbbbb;
+	transition: .4s;
+}
+
+.menu__btn--times {
+	display: none;
+	min-width: 42px;
+	min-height: 38px;
+	font-size: 52px;
+	color: #bbbbbb;
+	transition-duration: .2s;
+}
+
+.menu__btn--times:hover {
+	color: #ffffff;
+	transform: scale(1.05);
+	transition: .2s;
+}
+
+/* NAV */
+
+.nav {
+	display: none;
+	position: absolute;
+	right: 60px;
+	min-width: 400px;
+	box-shadow: 150px 0 0 250px rgba(255, 255, 255, .5),
+		  inset 150px 0 0 250px rgba(255, 255, 255, .5);
+}
+
+.nav__list {
+
+}
+
+.nav__item {
+	min-height: 100px;
+	background: linear-gradient(to top, #2e363a, #333b3f);
+	transition-duration: .4s;
+}
+
+.nav__item:hover {
+	background: linear-gradient(to top, #1a5c2b, #19702b);
+	transition: .4s;
+}
+
+.nav__link {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	text-decoration: none;
+	text-transform: none;
+	margin: 0 auto;
+}
+
+.nav__img {
+	vertical-align: middle;
+	padding-left: 35px;
+}
+
+.nav__text {
+	text-align: center;
+	color: #ffffff;
+	font-family: "Neris-Black", sans-serif;
+	font-size: 32px;
+	font-weight: 400;
+	vertical-align: middle;
+	text-decoration: none;
+	text-transform: none;
+	padding: 30px;
+}
+
+/* END NAV */
+
+
+.header__info {
+	margin-left: 146px;
+}
+
+.header__title {
+	max-width: 380px;
+	max-height: 313px;
+	color: #ffffff;
+	font-family: "Neris-SemiBold", sans-serif;
+	font-size: 72px;
+	font-weight: 400;
+}
+
+.guide {
+	margin-top: 20px;
+	max-width: 140px;
+	margin-left: 140px;
+	transition-duration: .2s;
+}
+
+.guide:hover {
+	cursor: pointer;
+	transform: scale(1.02);
+	transition: .2s;
+}
+
+.guide-icon {
+	min-height: 112px;
+	min-width: 106px;
+	background: url(../images/header-video.png) 50% 50% no-repeat;
+	background-size: contain;
+	text-align: center;
+}
+
+.guide-icon img {
+	padding-top: 65px;
+}
+
+.guide__text {
+	padding-top: 25px;
+	color: #ffffff;
+	font-family: "Neris-Black", sans-serif;
+	font-size: 24px;
+	font-weight: 400;
+	text-align: center;
+}

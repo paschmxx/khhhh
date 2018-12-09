@@ -1,0 +1,17 @@
+.artwork--1 {
+    min-height: 400px;
+    background: #0d0739 url(../images/artwork--1.jpg) 50% 40% no-repeat;
+    background-size: cover;
+    transition-duration: .4s;
+}
+
+.artwork--1 a {
+    color: #000000;
+}
+
+.artwork--1 a:hover {
+    color: #fd1414;
+    text-shadow: 2px -1px 5px #999;
+    text-decoration: underline;
+    transition: .4s;
+}

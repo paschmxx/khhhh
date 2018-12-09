@@ -1,0 +1,24 @@
+.footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 124px;
+	background: #08424e url(../images/footer-bg.jpg) 50% 0 no-repeat;
+	background-size: cover;
+}
+
+.footer__info {
+	font-family: 'Neris-Thin', sans-serif;
+	text-align: center;
+	color: #000000;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 24px;
+}
+
+.footer__pasch {
+	font-family: 'Neris-Thin', sans-serif;
+	color: #ffffff;
+	margin-right: -3px;
+}

@@ -1,0 +1,76 @@
+.clothing {
+	background: #0d0739 url(../images/clothing-bg.jpg);
+    margin-top: 86px;
+    min-height: 860px;
+    position: relative;
+}
+
+.clothing__title {
+    color: #ffffff;
+}
+
+.clothing__slider img {
+    display: block;
+    padding-top: 15px;
+    margin: 0 auto;
+}
+
+
+/* SLIDER # 2*/
+
+    @keyframes slidy {
+        0% { left: 0%; }
+        20% { left: 0%; }
+        25% { left: -100%; }
+        45% { left: -100%; }
+        50% { left: -200%; }
+        70% { left: -200%; }
+        75% { left: -300%; }
+        95% { left: -300%; }
+        100% { left: 0%; }
+        }
+        
+        
+        div#slider figure img { 
+            width: 50vw; 
+            float: left; 
+            margin: 0 25vw;
+        }
+
+        div#slider figure img:nth-child(1) {
+            transform: translateY(60px);
+        }
+
+        div#slider figure img:nth-child(4) {
+            transform: translateY(-150px);
+        }
+
+        div#slider figure { 
+          position: relative;
+          width: 500%;
+          margin: 0;
+          left: 0;
+          text-align: left;
+          font-size: 0;
+          animation: 28s slidy infinite; 
+        }
+        
+        .clothing__slider:before {
+            content: '';
+            position: absolute;
+            width: 324px;
+            height: 360px;
+            left: 0;
+            top: 200px;
+            background: url(../images/clothing-left.png);
+        }
+        
+        .clothing__slider:after {
+            content: '';
+            position: absolute;
+            width: 324px;
+            height: 360px;
+            right: 0;
+            top: 200px;
+            background: url(../images/clothing-right.png);
+        }
